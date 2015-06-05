@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>What I have in my notes</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+  </head>
+  <body>
+  <!--Now I'm using <div> tags. Trying to fit all my content in boxes. As said Jassica Olman:-"Everything on a webpage is actually a box"   -->
+  <h1>Lesson 2</h1>
+    <div class="nav">
+      <ul>
+        <li><a href="../index.html">MAIN</a></li>        
+        <li><a href="../lesson%201/index1.html">LESSON 1</a></li>
+        <li><a href="index2.html">LESSON 2</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="content-title">
+        <span class="bold">Structure of the Webpage.</span>
+        <p>
+          <img src="../images/structure.png" alt="Structure of Webpage">
+        </p> 
+      </div>
+    </div>
+    <div class="content">
+    <div class="content-title">
+       <span class="bold">How do I include CSS styling in my webpage?</span>
+    </div>
+      <h2>There are three ways you can do this.</h2>
+       <dl>
+         <dt>
+           <span class="bold">Method 1:</span> Write in the <img src="../images/head.png" alt="head">
+           of your HTML.
+         </dt> 
+         <dd>
+           This method is good for very small projects (like what you would do in scratchpad.io). To do this:
+           <ol>
+           <li>At the top of your HTML document, add a <img src="../images/head.png" alt="head"> element.</li>
+           <li>Inside the <img src="../images/head.png" alt="head"> element, add a <img src="../images/style.png" alt="style"> element.</li>
+           <li>Write CSS in the <img src="../images/style.png" alt="style"> element and then put the HTML for the rest of your page below.<br><img src="../images/method1.png" alt="HTML code"></li>
+           </ol>
+         </dd>
+         <dt>
+             <span class="bold">Method 2:</span> Link your HTML to a separate CSS file.
+         </dt>
+         <dd>
+             This adds you another step, but it lets you stay more organized when working on larger projects. To do this:
+           <ol>
+             <li>In a separate file ( lets call it <img src="../images/css.png" alt="css">), put all of your CSS code.</li>
+             <li>Add a <img src="../images/head.png" alt="head"> element to the top of your HTML.</li>
+             <li>Add a <img src="../images/link.png" alt="link"> tag inside the <img src="../images/head.png" alt="head"> element. Since <img src="../images/link.png" alt="link"> is a VOID TAG you don't need to add a closing <img src="../images/clink.png" alt="closing link">.</li>
+             <li>Add following attribute to your <img src="../images/link.png" alt="link"> : <img src="../images/rel.png" alt="attribute rel"> <img src="../images/type.png" alt="attribute type">. </li>
+           </ol>
+           <p>
+             For example you would have a <img src="../images/html.png" alt="html"> file that looked like this: <br>
+             <img src="../images/method2h.png" alt="HTML code"><br>
+             <span class="bold">NOTE:</span> <img src="../images/method2note.png" alt="attributes"> is used to load a CSS.
+           </p>
+           <p>  
+             In the same folder you would have a file called <img src="../images/css.png" alt="CSS"> like this:<br>
+             <img src="../images/method2c.png" alt="CSS code">
+           </p>
+           <p>
+             If you want to write CSS that makes all <img src="../images/div.png" alt="DIV element"> elemnts have a red background and white text, you would write:<br>
+             <img src="../images/method2css.png" alt="CSS code"><br> 
+             In this example after <img src="../images/div.png" alt="DIV element"> there is a left curly brace <img src="../images/left%20brace.png" alt="left curly brace"> and at the bottom there is a matching right curly brace <img src="../images/right%20brace.png" alt="right curly brace">. Everything between theese curly braces will be interpreted as a "rule" that should be applied to every <img src="../images/div.png" alt="DIV elemnt"> element.
+           </p>
+           <p>
+             The line of code that says <img src="../images/red.png" alt="background-color"> is a DECLARATION <img src="../images/back.png" alt="property"> is a PROPERTY and <img src="../images/value.png" alt="value"> is the VALUE of that property.
+           </p>
+           <p>
+             <span class="bold">Selecting by class</span><br>
+             In the example, we set the background-color of every <img src="../images/div.png" alt="div element"> to red. If we only want to add style to certain <img src="../images/div.png" alt="div element">'s, we can use <span class="bold">class selectors</span><br>
+             <img src="../images/HTML%20code.png" alt="Html code"><br>
+             <img src="../images/CSS%20code.png" alt="css code"> 
+           </p>
+         </dd>
+         <dt>
+           <p>
+             <span class="bold"> Method 3:</span> Write your style inline with your HTML.
+           </p>
+         </dt>
+         <dd>
+           <p> 
+             This is generally a very bad idea because it leads to lots of repeated code. But you may see code that uses this method so it's good to be familiar with it. If you want to know more, check out the question and answers on <a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a> (Stack Overflow is the most widely used programming QandA comunity out there). With this method, you modify the style attributes of every individual HTML element. For example:<br>
+             <img src="../images/method3.png" alt="Method 3"><br>
+             <span class="bold">NEVER EVER DO THIS!!!</span>
+           </p>
+         </dd>
+        </dl>
+    </div>
+    <div class="content">
+     <div class="content-title">
+       <span class="bold">COMMENTS in HTML and CSS</span>
+     </div> 
+       <p>
+         Comments are lines of text that the computer ignores. They are just there so that programmers can leave notes for other people or themselves to read.
+       </p>
+       <ul>
+         <li>In HTML, code comments begin with <img src="../images/combegH.png" alt="HTML comments beginnig sign"> and end with <img src="../images/comendH.png" alt="HTML comment ending sign">. Everything in between is ignored.</li>
+         <li>In CSS, code comments begin with <img src="../images/combegC.png" alt="CSS comments beginning sign"> and end with <img src="../images/comendC.png" alt="CSS comments ending sign"></li>
+       </ul>
+    </div>
+    <div class="content">
+      <div class="content-title">
+        <span class="bold">Boxes, Boxes - EVERYWHERE!</span>
+        <p><img src="../images/boxes.png" alt="Boxes on webpage"></p>
+      </div>
+      <h2>Box positioning:</h2>
+        <ol>
+          <li><img src="../images/div.png" alt="div element">'s are block elements (as opposed to inline), so by default they take up the entire width of page.</li>
+          <li>Adding the rule <img src="../images/display.png" alt="display rule"> to the appropriate CSS will override this behavior and let <img src="../images/div.png" alt="div element">'s appear next to each other.</li>
+        </ol>
+      <h2>There are four main points about box sizing:</h2>
+        <ol>
+          <li>HTML elements are boxes and each box has 4 components.
+             <ol>
+               <li>Margin</li>
+               <li>Border</li>
+               <li>Padding</li>
+               <li>Content</li>
+             </ol>
+          </li>
+          <li>Because there are so many components to each box, it can often hard to get the size of a box just right.</li>
+          <li>There are two techniques you can use to help deal with sizing issues:
+             <ol>
+               <li>
+                 Set sizes in terms of persentage rather than pixels.
+               </li>
+               <li>
+                 Set the <img src="../images/box.png" alt="Box-sizing"> attribute to <img src="../images/border.png" alt="border-box"> for every element.<br>
+                 <img src="../images/borderC.png" alt="CSS for box-sizing">
+               </li>
+             </ol>
+          </li>
+          <li>Different browsers work slightly different. Sometimes this couses different browsers to display the same code differently</li>
+        </ol>
+    </div>
+    <div class="content">
+      <div class="content-title">
+        <span class="bold">Code, Test, Refine.</span>
+      </div>
+        <ol>
+         <li>Look for natural boxes.</li>
+         <li>Look for repeated styles and semantic elements.</li>
+         <li>Write your HTML.</li>
+         <li>Apply styles (from BIGGEST to smallest).</li>
+         <li>Fix things</li>
+        </ol>
+    </div>
+    <div class="cssvalid">
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+             src="http://jigsaw.w3.org/css-validator/images/vcss"
+             alt="Valid CSS!" />
+        </a>
+      </p>
+    </div>
+    </body>
+</html>
+

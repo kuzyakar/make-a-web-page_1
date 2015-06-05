@@ -1,0 +1,41 @@
+/* This is a CSS comment.*/
+h1 {
+    text-align: center;
+    color: rgb(3, 201, 169);
+    font-size: 50px
+}
+img {
+    border-radius: 10px;
+}
+.nav li {
+    display: inline;
+}
+.nav a {
+  text-decoration: none;
+  padding: 1em;
+  color: rgb(85, 26, 139);
+  font-size: 20px;
+}
+.nav {
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgb(101, 198, 187);
+}
+.content {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(101, 198, 187);
+    font-size: 18px;
+}
+.content-title {
+    text-align: center;
+    font-size: 30px;
+}
+.bold {
+    font-weight: bold;
+}
+/*
+Comments are only to help PEOPLE read a code file. The
+computer ignores them.
+*/
